@@ -21,7 +21,7 @@ fun rx.Completable.toV2Completable() = RxJavaInterop.toV2Completable(this)!!
 fun <T> rx.Single<T>.toV2Maybe() = RxJavaInterop.toV2Maybe(this)!!
 fun <T> rx.Completable.toV2Maybe() = RxJavaInterop.toV2Maybe<T>(this)!!
 
-fun <T> Publisher<T>.toV1Observable() = RxJavaInterop.toV1Observable(this)
+fun <T> Publisher<T>.toV1Observable() = RxJavaInterop.toV1Observable(this)!!
 fun <T> Observable<T>.toV1Observable(strategy: BackpressureStrategy) = RxJavaInterop.toV1Observable(this, strategy)!!
 fun <T> Single<T>.toV1Single() = RxJavaInterop.toV1Single(this)!!
 fun Completable.toV1Completable() = RxJavaInterop.toV1Completable(this)!!
@@ -30,7 +30,7 @@ fun <T> Maybe<T>.toCompletable() = RxJavaInterop.toV1Completable(this)!!
 
 
 fun <T> rx.subjects.Subject<T, T>.toV2Subject() = RxJavaInterop.toV2Subject(this)!!
-fun <T> rx.subjects.Subject<T, T>.toV2Provessor() = RxJavaInterop.toV2Processor(this)!!
+fun <T> rx.subjects.Subject<T, T>.toV2Processor() = RxJavaInterop.toV2Processor(this)!!
 
 fun <T> Subject<T>.toV1Subject() = RxJavaInterop.toV1Subject(this)!!
 fun <T> FlowableProcessor<T>.toV1Subject() = RxJavaInterop.toV1Subject(this)!!

@@ -119,7 +119,7 @@ class RxJavaInteropKtTest {
   @Test
   fun sj1p2() {
     val s = rx.subjects.PublishSubject.create<Int>()
-    val t = s.toV2Provessor().test()
+    val t = s.toV2Processor().test()
 
     s.hasObservers().should be true
 

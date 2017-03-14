@@ -5,7 +5,7 @@ apply plugin: 'java'
 apply plugin: 'kotlin'
 
 buildscript {
-    ext.kotlin_version = '1.0.6'
+    ext.kotlin_version = '1.1.0'
 
     repositories {
         mavenCentral()
@@ -20,10 +20,13 @@ sourceCompatibility = 1.7
 
 repositories {
     mavenCentral()
+    maven { url 'http://dl.bintray.com/ngsw-taro/maven' }
 }
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile "com.github.akarnokd:rxjava2-interop:0.9.1"
+
     testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile 'com.taroid.knit:knit:0.1.2'
 }

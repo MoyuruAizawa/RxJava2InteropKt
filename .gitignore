@@ -38,3 +38,18 @@ captures/
 
 # Keystore files
 *.jks
+.idea/compiler.xml
+.idea/gradle.xml
+.idea/kotlinc.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/libraries/Gradle__com_github_akarnokd_rxjava2_interop_0_9_1.xml
+.idea/libraries/Gradle__com_taroid_knit_knit_0_1_2.xml
+.idea/libraries/Gradle__io_reactivex_rxjava2_rxjava_2_0_6.xml
+.idea/libraries/Gradle__io_reactivex_rxjava_1_2_6.xml
+.idea/libraries/Gradle__junit_junit_4_11.xml
+.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml
+.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml
+.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_1_0.xml
+.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_0.xml

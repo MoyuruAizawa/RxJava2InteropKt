@@ -3,15 +3,18 @@ version '0.1'
 
 apply plugin: 'java'
 apply plugin: 'kotlin'
+apply plugin: 'com.novoda.bintray-release'
 
 buildscript {
     ext.kotlin_version = '1.1.0'
 
     repositories {
         mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.novoda:bintray-release:0.4.0'
     }
 }
 
@@ -29,4 +32,13 @@ dependencies {
 
     testCompile group: 'junit', name: 'junit', version: '4.11'
     testCompile 'com.taroid.knit:knit:0.1.2'
+}
+
+publish {
+    userOrg = 'lvla'
+    groupId = 'com.lvla.android'
+    artifactId = 'rxjava2-interop-kt'
+    publishVersion = "0.1.2"
+    desc = "Kotlin extension functions for RxJava2Interop"
+    website = 'https://github.com/lvla/RxJava2InteropKt'
 }

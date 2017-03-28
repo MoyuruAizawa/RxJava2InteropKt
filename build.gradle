@@ -38,7 +38,7 @@ publish {
     userOrg = 'lvla'
     groupId = 'com.lvla.android'
     artifactId = 'rxjava2-interop-kt'
-    publishVersion = "0.1.2"
+    publishVersion = "0.2.0"
     desc = "Kotlin extension functions for RxJava2Interop"
     website = 'https://github.com/lvla/RxJava2InteropKt'
 }

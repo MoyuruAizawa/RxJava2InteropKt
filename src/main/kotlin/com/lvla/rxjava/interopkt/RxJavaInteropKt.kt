@@ -2,13 +2,13 @@ package com.lvla.rxjava.interopkt
 
 import hu.akarnokd.rxjava.interop.RxJavaInterop
 import io.reactivex.BackpressureStrategy
-import io.reactivex.Completable
+import io.reactivex.CompletableSource
 import io.reactivex.CompletableTransformer
 import io.reactivex.FlowableOperator
 import io.reactivex.FlowableTransformer
-import io.reactivex.Maybe
-import io.reactivex.Observable
-import io.reactivex.Single
+import io.reactivex.MaybeSource
+import io.reactivex.ObservableSource
+import io.reactivex.SingleSource
 import io.reactivex.SingleTransformer
 import io.reactivex.processors.FlowableProcessor
 import io.reactivex.subjects.Subject
@@ -22,11 +22,12 @@ fun <T> rx.Single<T>.toV2Maybe() = RxJavaInterop.toV2Maybe(this)!!
 fun <T> rx.Completable.toV2Maybe() = RxJavaInterop.toV2Maybe<T>(this)!!
 
 fun <T> Publisher<T>.toV1Observable() = RxJavaInterop.toV1Observable(this)!!
-fun <T> Observable<T>.toV1Observable(strategy: BackpressureStrategy) = RxJavaInterop.toV1Observable(this, strategy)!!
-fun <T> Single<T>.toV1Single() = RxJavaInterop.toV1Single(this)!!
-fun Completable.toV1Completable() = RxJavaInterop.toV1Completable(this)!!
-fun <T> Maybe<T>.toV1Single() = RxJavaInterop.toV1Single(this)!!
-fun <T> Maybe<T>.toCompletable() = RxJavaInterop.toV1Completable(this)!!
+fun <T> ObservableSource<T>.toV1Observable(strategy: BackpressureStrategy)
+    = RxJavaInterop.toV1Observable(this, strategy)!!
+fun <T> SingleSource<T>.toV1Single() = RxJavaInterop.toV1Single(this)!!
+fun CompletableSource.toV1Completable() = RxJavaInterop.toV1Completable(this)!!
+fun <T> MaybeSource<T>.toV1Single() = RxJavaInterop.toV1Single(this)!!
+fun <T> MaybeSource<T>.toCompletable() = RxJavaInterop.toV1Completable(this)!!
 
 
 fun <T> rx.subjects.Subject<T, T>.toV2Subject() = RxJavaInterop.toV2Subject(this)!!

@@ -53,3 +53,6 @@ captures/
 .idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml
 .idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_1_0.xml
 .idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_0.xml
+.idea/libraries/Gradle__com_github_akarnokd_rxjava2_interop_0_9_4.xml
+.idea/libraries/Gradle__io_reactivex_rxjava2_rxjava_2_0_7.xml
+.idea/libraries/Gradle__io_reactivex_rxjava_1_2_9.xml

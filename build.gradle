@@ -28,7 +28,7 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile "com.github.akarnokd:rxjava2-interop:0.9.1"
+    compile "com.github.akarnokd:rxjava2-interop:0.9.4"
 
     testCompile group: 'junit', name: 'junit', version: '4.11'
     testCompile 'com.taroid.knit:knit:0.1.2'
@@ -38,7 +38,7 @@ publish {
     userOrg = 'lvla'
     groupId = 'com.lvla.android'
     artifactId = 'rxjava2-interop-kt'
-    publishVersion = "0.2.0"
+    publishVersion = "0.2.1"
     desc = "Kotlin extension functions for RxJava2Interop"
     website = 'https://github.com/lvla/RxJava2InteropKt'
 }

@@ -3,13 +3,8 @@ Extensions for [RxJava2Interop](https://github.com/akarnokd/RxJava2Interop)
 # Installation
 
 ```
-repositories {
-  maven { url 'https://jitpack.io' }
-}
-
-
 dependencies {
-  compile 'com.github.lvla:RxJava2InteropKt:0.1.1'
+  compile 'com.lvla.android:rxjava2-interop-kt:0.2.1'
 }
 ```
 
